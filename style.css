@@ -9,9 +9,9 @@
 }
 .header-container{
     width: 100%;
-    height: 60px;
+    height: 80px;
     display: flex;
-    gap: 7rem;
+    flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: center;
     background-color:var(--discord-bg-color);
@@ -22,7 +22,9 @@
     align-items: center;
 }
 .header-left a{
-    color: var(--header-color);
+    color: white;
+    font-size: 20px;
+    font-weight: bolder;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -38,7 +40,7 @@
 
 .header-center ul {
     display: flex;
-    gap: 1rem;
+    gap: 3rem;
 }
 .header-container ul li{
     list-style: none;
@@ -46,18 +48,169 @@
 }
 .header-container ul li a{
     color: white;
+    font-size: 13px;
+    font-weight: bold;
 }
 
 .header-right .login-btn {
-    width: 60px;
-    height: 34px;
+    background-color: white;
+    width: 64px;
+    height: 40px;
     border-radius: 18px;
+    border: none;
 }
 
+.header-right .login-btn:hover {
+    color: #404EED;
+}
 
 /* first section */
 
 .first-section {
     width: 100%;
-    background-image: url("./images/Background/e6d57714479874c665b36c7adee76b1d.svg");
+    height: 550px;
+    display: flex;
+}
+
+.first-section .background-img img{
+    position: absolute;
+    width: 1536px;
+}
+.first-center{
+    width: 100%;
+    height: 100px;
+    position: relative;
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+    top: 13rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.center1 h1 {
+    color: white;
+    font-weight: 900;
+    font-size: 60px;
+}
+.center2 p {
+    text-align: center;
+    color: white;
+    font-size: 15px;
+    line-height: 35px;
+}
+.center3 button {
+    border: none;
+    border-radius: 30px;
+    font-size: 17px;
+}
+.center3 .download {
+    width: 240px;
+    height: 55px;
+    margin-right: 10px;
+}
+.center3 .open-discord {
+    background-color: rgb(19, 19, 19);
+    color: white;
+    width: 290px;
+    height: 55px;
+}
+.center3 .download:hover{
+    background-color: white;
+    color: #404EED;
+    box-shadow:  gainsboro;
+}
+.center3 .open-discord:hover {
+    background-color: rgb(48, 48, 48);
+}
+
+
+/*section 2 */
+
+.section {
+    width: 100%;
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8rem;
+}
+.odd {
+    background-color: #FFFFFF;
+}
+.even {
+    background-color: #F6F6F6;
+}
+
+.odd-left {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.section-text-box ul {
+    height:100% ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    
+}
+
+.section-ul li {
+    list-style: none;
+}
+
+.section-ul li h1 {
+    font-weight: 900;
+    font-size: 40px;
+}
+
+.section-ul li p {
+    line-height: 30px;
+}
+
+/* last section */
+
+.last-section {
+    width: 100%;
+    height: 1000px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 2rem;
+    padding-top: 3rem;
+}
+
+.last-top h1{
+    font-size: 3em;
+    font-weight: 900;
+    margin: 30px;
+}
+
+.last-download {
+    color: white;
+    margin-top: 40px;
+    border: none;
+    border-radius: 30px;
+    font-size: 17px;
+    width: 240px;
+    height: 60px;
+    background-color: #5864e8 ;/*#7983F5 */
+}
+.last-download:hover {
+    box-shadow: inset;
+    background-color: #868eed;
+}
+.ready img{
+    position: relative;
+    z-index: 0;
+}
+.ready h1 {
+    z-index: 4;
+    margin-top: -40px;
+    font-size: 27px;
 }
